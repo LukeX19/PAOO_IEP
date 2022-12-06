@@ -158,7 +158,7 @@ int main()
     //let's say we want to change the color of the Bugatti, which is a critical operation
     //therefore, we create a block to define a critical section
     {
-        LockedCar lc(specialCar);                   //lock the car object
+        LockedCar lc(specialCar);                            //lock the car object
         std::cout<<"Car locked: "<<specialCar.getIsCarLocked()<<"\n";
         
         specialCar.changeCarColor("Red and White");          //we now change the color
